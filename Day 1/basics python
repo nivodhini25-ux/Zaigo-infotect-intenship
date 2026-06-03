@@ -1,0 +1,183 @@
+Even or Odd: Ask a number from the user and print whether it's even or odd.
+
+
+# Program to check whether a number is Even or Odd
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+print(num, "is an Even number")
+else:
+print(num, "is an Odd number")
+
+OUTPUT:
+Enter a number: 23
+23 is an Odd number
+
+
+2. Positive, Negative or Zero: Take a number input and print if it is positive, negative
+or zero.
+
+
+# Program to check whether a number is Positive, Negative, or Zero
+num = float(input("Enter a number: "))
+if num > 0:
+print("The number is Positive.")
+elif num < 0:
+print("The number is Negative.")
+else:
+print("The number is Zero.")
+OUTPUT:
+Enter a number: 23
+The number is Positive.
+
+3. Simple Calculator: Ask for 2 numbers and an operator (+, -, *, /) and return the
+result.
+
+
+# Simple Calculator using Functions
+def calculator(a, b, op):
+if op == "+":
+return a + b
+elif op == "-":
+return a - b
+elif op == "*":
+return a * b
+elif op == "/":
+return a / b
+else:
+return "Invalid operator"
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operator = input("Enter operator (+, -, *, /): ")
+result = calculator(num1, num2, operator)
+print("Result =", result)
+
+OUTPUT:
+Enter first number: 55
+Enter second number: 78
+Enter operator (+, -, *, /): *
+Result = 4290.0
+
+4.Find Maximum of 3 Numbers: Take 3 inputs and print the largest number.
+
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+if num1 >= num2 and num1 >= num3:
+print("Largest number is", num1)
+elif num2 >= num1 and num2 >= num3:
+print("Largest number is", num2)
+else:
+print("Largest number is", num3)
+
+OUTPUT:
+Enter first number: 66
+Enter second number: 67
+Enter third number: 89
+Largest number is 89
+
+5. Check Leap Year: Ask for a year and print whether it is a leap year or not.
+
+
+year = int(input("Enter a year: "))
+if year % 400 == 0:
+print("Leap Year")
+elif year % 100 == 0:
+print("Not a Leap Year")
+elif year % 4 == 0:
+print("Leap Year")
+else:
+print("Not a Leap Year")
+
+OUTPUT:
+Enter a year: 2024
+Leap Year
+
+6. Print 1 to N: Input N, print all numbers from 1 to N using a loop.
+
+
+n = int(input("Enter a number: "))
+i = 1
+while i <= n:
+print(i)
+i += 1
+
+OUTPUT:
+Enter a number: 12
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+
+7. Sum of N Numbers: Input N, find the sum of numbers from 1 to N.
+
+
+n = int(input("Enter a number: "))
+total = n * (n + 1) // 2
+print("Sum =", total)
+
+OUTPUT:
+Enter a number: 12
+Sum = 78
+
+8. Multiplication Table: Print the multiplication table for a number.
+
+
+num = int(input("Enter a number: "))
+i = 1
+while i <= 10:
+print(f"{num} x {i} = {num * i}")
+i += 1
+
+OUTPUT:
+Enter a number: 45
+45 x 1 = 45
+45 x 2 = 90
+45 x 3 = 135
+45 x 4 = 180
+45 x 5 = 225
+45 x 6 = 270
+45 x 7 = 315
+45 x 8 = 360
+45 x 9 = 405
+45 x 10 = 450
+
+9. Factorial of a Number: Input a number and print its factorial.
+
+
+num = int(input("Enter a number: "))
+fact = 1
+i = 1
+while i <= num:
+fact = fact * i
+i += 1
+print("Factorial =", fact)
+
+OUTPUT:
+Enter a number: 56
+Factorial =
+7109985878048634518540456474637249497364979788811684586874470400000000000
+00
+
+10. Fibonacci Series up to N terms: Input N, print first N Fibonacci numbers.
+
+
+n = int(input("Enter number of terms: "))
+first = 0
+second = 1
+print("Fibonacci Series:")
+for i in range(n):
+print(first, end=" ")
+first, second = second, first + second
+
+OUTPUT :
+Enter number of terms: 2
+Fibonacci Series: 0 1
